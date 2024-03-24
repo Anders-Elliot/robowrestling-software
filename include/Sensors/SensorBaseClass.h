@@ -5,6 +5,12 @@ class SensorBaseClass {
         const int _baudRate;
 
     public:
+
+        // default constructor
+        SensorBaseClass() : _receivePin(0), _transmitPin(0), _baudRate(0) {
+        }
+
+        // not sure if this is necessary
         SensorBaseClass(int receivePin, int transmitPin, int baudRate) : 
         _receivePin(receivePin), _transmitPin(transmitPin), _baudRate(baudRate) {
         }
